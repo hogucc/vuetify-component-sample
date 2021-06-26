@@ -88,6 +88,10 @@
         </v-row>
       </v-col>
     </v-row>
+    <v-select
+      :items="items"
+      label="Standard"
+    ></v-select>
   </v-container>
 </template>
 
@@ -146,6 +150,7 @@
           href: 'https://vuetifyjs.com/getting-started/frequently-asked-questions',
         },
       ],
+      items: ['Foo', 'Bar', 'Baz']
     }),
   }
 </script>
